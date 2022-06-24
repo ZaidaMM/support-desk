@@ -76,7 +76,7 @@ h3 {
 }
 
 .heading {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 50px;
   padding: 0 20px;
@@ -397,10 +397,10 @@ footer {
 
   .ticket-created h2,
   .heading h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .heading p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
