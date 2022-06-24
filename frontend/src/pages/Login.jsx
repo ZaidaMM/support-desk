@@ -23,13 +23,13 @@ const Login = () => {
 
   return (
     <>
-      <div className='heading'>
+      <section className='heading'>
         <h1>
           <FaSignInAlt /> Login
         </h1>
-        <p>Please create an account</p>
-      </div>
-      <div className='form'>
+        <p>Please login to your account</p>
+      </section>
+      <section className='form'>
         <form onSubmit={onSubmit}>
           <div className='form-group'>
             <input
@@ -59,7 +59,7 @@ const Login = () => {
             <button className='btn btn-block'>Submit</button>
           </div>
         </form>
-      </div>
+      </section>
     </>
   );
 };
