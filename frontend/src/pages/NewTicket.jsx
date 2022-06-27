@@ -9,7 +9,7 @@ import BackButton from '../components/BackButton';
 const NewTicket = () => {
   const { user } = useSelector((state) => state.auth);
   const { isLoading, isError, isSuccess, message } = useSelector(
-    (state) => state.ticket
+    (state) => state.tickets
   );
 
   const [name] = useState(user.name);
@@ -43,7 +43,7 @@ const NewTicket = () => {
 
   return (
     <>
-      <BackButton url={'/'} />
+      <BackButton url='/' />
       <section className='heading'>
         <h1>Create New Ticket</h1>
         <p>Please fill out the form below</p>
