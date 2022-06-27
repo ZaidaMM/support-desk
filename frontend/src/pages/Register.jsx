@@ -29,7 +29,7 @@ const Register = () => {
     }
 
     //Redirect when logged in
-    if (isSuccess) {
+    if (isSuccess || user) {
       navigate('/');
     }
 
