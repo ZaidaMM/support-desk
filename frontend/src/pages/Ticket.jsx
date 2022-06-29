@@ -4,7 +4,11 @@ import { toast } from 'react-toastify';
 import Modal from 'react-modal';
 import { FaPlus } from 'react-icons/fa';
 import { getTicket, reset, closeTicket } from '../features/tickets/ticketSlice';
-import { getNotes, reset as notesReset } from '../features/notes/noteSlice';
+import {
+  getNotes,
+  reset as notesReset,
+  createNote,
+} from '../features/notes/noteSlice';
 import { useParams, useNavigate } from 'react-router-dom';
 import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
@@ -61,7 +65,8 @@ const Ticket = () => {
   // Create note submit
   const onNoteSubmit = (e) => {
     e.preventDefault();
-    console.log('Submit');
+    dispatch(createNote({ noteText, ticketId }));
+    toast.success('Note created');
     closeModal();
   };
 
